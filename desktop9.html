@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar {
+      background-color: #d6efc7; /* Light green */
+    }
+    .navbar-brand img {
+      height: 70px; /* Adjust logo size */
+    }
+    .search-bar {
+      border-radius: 20px;
+      background-color: #edf4e5;
+    }
+    .nav-link {
+      color: white !important;
+    }
+    .bottom-navbar {
+      background-color: #34a12c; /* Dark green */
+    }
+    .icon-btn {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg py-0 align-items-center">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./img/logo.png" alt="Green Logo">
+      </a>
+
+      <!-- Search Bar -->
+      <form class="d-flex mx-auto" role="search">
+        <input class="form-control search-bar w-75 px-3 " type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">
+          <i class="bi bi-search"></i> <!-- Bootstrap Icons -->
+        </button>
+      </form>
+
+      <!-- Icons -->
+      <div>
+        <!-- <a href="#" class="icon-btn me-3">
+          <i class="bi bi-cart-fill"></i>
+        </a>
+        <a href="#" class="icon-btn me-3">
+          <i class="bi bi-bell-fill"></i>
+        </a>
+        <a href="#" class="icon-btn">
+          <i class="bi bi-person-circle"></i>
+        </a> -->
+
+        <button class="btn btn-success text-white mt-3 mx-2 px-3 py-2 rounded-pill"
+        aria-label="See product details"
+        style="width: 90px; height: 40px;">
+            Login
+        </button>
+        
+        <button class="btn btn-success text-white mt-3 px-3 py-2 rounded-pill"
+        aria-label="See product details"
+        style="width: 90px; height: 40px;">
+            Sign up
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bottom Navbar -->
+  <nav class="navbar bottom-navbar">
+    <div class="container-fluid justify-content-center">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Fresh Meat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Vegetables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Fruits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dairy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<!--------------------------------------------------------------------------------->
+
+
+
+
+<div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="./img/slider.png" class="d-block w-100" alt="Fresh Meat">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="text-success fw-bold">Fresh Meat</h1>
+        <p class="bg-danger text-white d-inline px-2">FRESH</p>
+        <p class="bg-warning text-dark d-inline px-2">LOCAL MEAT</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="./img/slider.png" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="text-success fw-bold">High-Quality Produce</h1>
+        <p class="bg-warning text-dark d-inline px-2">100% Organic</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="./img/slider.png" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="text-success fw-bold">Delivered Fresh</h1>
+        <p class="bg-danger text-white d-inline px-2">Straight to Your Door</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+<!--------------------------------------------------------------------------------->
+
+
+
+<div class="container my-4">
+  <div class="row g-3">
+    <div class="col-12 col-sm-6 col-md-4">
+      <!-- Card 1 -->
+      <div class="d-flex flex-column rounded-0 mx-auto" style="max-width: 300px;">
+        <div class="d-flex flex-column rounded-0 mx-auto" style="max-width: 300px;">
+          <div
+            class="d-flex flex-column align-items-center pb-2 w-100 bg-white rounded-3 shadow"
+            style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);"
+          >
+            <div
+              class="d-flex flex-column position-relative align-items-end w-100 p-3 pt-1 pb-4 rounded-3"
+              style="aspect-ratio: 1.5;"
+            >
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/22ef5f65bed01796a7e6c49fa696d18176f51d89734439a9e0f06328a92d0728?placeholderIfAbsent=true&apiKey=4aef5adca22d4892aa398d723a19c85b"
+                alt="Fresh organic chicken from farm"
+                class="img-fluid position-absolute w-100 h-100"
+                style="object-fit: cover;"
+              />
+              <div class="position-relative mb-0 w-2"></div>
+            </div>
+            <div
+              class="d-flex flex-column p-2 mt-0 bg-success text-center text-white rounded-3 mx-auto"
+              style="max-width: 220px;"
+            >
+              <div class="text-start text-light fw-bold fs-5">Fresh Chicken</div>
+              <div
+                class="d-flex justify-content-center px-2 py-1 mt-2 mb-n2 text-white bg-secondary rounded-3 small"
+                role="status"
+                aria-live="polite"
+              >
+                Available in 5 days
+              </div>
+            </div>
+            <div 
+              class="mt-2 text-center fw-bold text-danger small"
+              aria-label="Price per kilogram"
+            >
+              ৳250.00/KG
+            </div>
+            <div 
+              class="mt-1 text-center text-black small"
+              aria-label="Product description"
+            >
+              Best quality farm-grown organic chicken. Each chicken weighs 1.5 to 2 KG.
+            </div>
+            <button
+              class="btn btn-success text-white mt-3 px-3 py-2 rounded-pill"
+              aria-label="See product details"
+              style="width: 150px;"
+            >
+              See Details
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <!-- Card 2 -->
+      <div class="d-flex flex-column rounded-0 mx-auto" style="max-width: 300px;">
+        <div class="d-flex flex-column rounded-0 mx-auto" style="max-width: 300px;">
+          <div
+            class="d-flex flex-column align-items-center pb-2 w-100 bg-white rounded-3 shadow"
+            style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);"
+          >
+            <div
+              class="d-flex flex-column position-relative align-items-end w-100 p-3 pt-1 pb-4 rounded-3"
+              style="aspect-ratio: 1.5;"
+            >
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/22ef5f65bed01796a7e6c49fa696d18176f51d89734439a9e0f06328a92d0728?placeholderIfAbsent=true&apiKey=4aef5adca22d4892aa398d723a19c85b"
+                alt="Fresh organic chicken from farm"
+                class="img-fluid position-absolute w-100 h-100"
+                style="object-fit: cover;"
+              />
+              <div class="position-relative mb-0 w-2"></div>
+            </div>
+            <div
+              class="d-flex flex-column p-2 mt-0 bg-success text-center text-white rounded-3 mx-auto"
+              style="max-width: 220px;"
+            >
+              <div class="text-start text-light fw-bold fs-5">Fresh Chicken</div>
+              <div
+                class="d-flex justify-content-center px-2 py-1 mt-2 mb-n2 text-white bg-secondary rounded-3 small"
+                role="status"
+                aria-live="polite"
+              >
+                Available in 5 days
+              </div>
+            </div>
+            <div 
+              class="mt-2 text-center fw-bold text-danger small"
+              aria-label="Price per kilogram"
+            >
+              ৳250.00/KG
+            </div>
+            <div 
+              class="mt-1 text-center text-black small"
+              aria-label="Product description"
+            >
+              Best quality farm-grown organic chicken. Each chicken weighs 1.5 to 2 KG.
+            </div>
+            <button
+              class="btn btn-success text-white mt-3 px-3 py-2 rounded-pill"
+              aria-label="See product details"
+              style="width: 150px;"
+            >
+              See Details
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <!-- Card 3 -->
+      <div class="d-flex flex-column rounded-0 mx-auto" style="max-width: 300px;">
+        <div class="d-flex flex-column rounded-0 mx-auto" style="max-width: 300px;">
+          <div
+            class="d-flex flex-column align-items-center pb-2 w-100 bg-white rounded-3 shadow"
+            style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);"
+          >
+            <div
+              class="d-flex flex-column position-relative align-items-end w-100 p-3 pt-1 pb-4 rounded-3"
+              style="aspect-ratio: 1.5;"
+            >
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/22ef5f65bed01796a7e6c49fa696d18176f51d89734439a9e0f06328a92d0728?placeholderIfAbsent=true&apiKey=4aef5adca22d4892aa398d723a19c85b"
+                alt="Fresh organic chicken from farm"
+                class="img-fluid position-absolute w-100 h-100"
+                style="object-fit: cover;"
+              />
+              <div class="position-relative mb-0 w-2"></div>
+            </div>
+            <div
+              class="d-flex flex-column p-2 mt-0 bg-success text-center text-white rounded-3 mx-auto"
+              style="max-width: 220px;"
+            >
+              <div class="text-start text-light fw-bold fs-5">Fresh Chicken</div>
+              <div
+                class="d-flex justify-content-center px-2 py-1 mt-2 mb-n2 text-white bg-secondary rounded-3 small"
+                role="status"
+                aria-live="polite"
+              >
+                Available in 5 days
+              </div>
+            </div>
+            <div 
+              class="mt-2 text-center fw-bold text-danger small"
+              aria-label="Price per kilogram"
+            >
+              ৳250.00/KG
+            </div>
+            <div 
+              class="mt-1 text-center text-black small"
+              aria-label="Product description"
+            >
+              Best quality farm-grown organic chicken. Each chicken weighs 1.5 to 2 KG.
+            </div>
+            <button
+              class="btn btn-success text-white mt-3 px-3 py-2 rounded-pill"
+              aria-label="See product details"
+              style="width: 150px;"
+            >
+              See Details
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<!---------------------=======================--------------=============--------============-------------- -->
+
+
+<footer class="bg-secondary text-white py-4">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Support Section -->
+      <div class="col-12 col-md-4 mb-3">
+        <h5 class="fw-bold">Support</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Privacy</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Terms of Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- About Us Section -->
+      <div class="col-12 col-md-4 mb-3">
+        <h5 class="fw-bold">About Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Our Story</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us Section -->
+      <div class="col-12 col-md-4 mb-3">
+        <h5 class="fw-bold">Contact Us</h5>
+        <ul class="list-unstyled">
+          <li class="text-white">Phone: 01xxxxxxxx</li>
+          <li class="text-white">Telephone: 09xxxxx</li>
+          <li class="text-white">Email: <a href="mailto:greenmarket@gmail.com" class="text-white text-decoration-none">greenmarket@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>

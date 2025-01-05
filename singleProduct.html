@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar {
+      background-color: #d6efc7; /* Light green */
+    }
+    .navbar-brand img {
+      height: 70px; /* Adjust logo size */
+    }
+    .search-bar {
+      border-radius: 20px;
+      background-color: #edf4e5;
+    }
+    .nav-link {
+      color: white !important;
+    }
+    .bottom-navbar {
+      background-color: #34a12c; /* Dark green */
+    }
+    .icon-btn {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+    <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg py-0 align-items-center">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./img/logo.png" alt="Green Logo">
+      </a>
+
+      <!-- Search Bar -->
+      <form class="d-flex mx-auto" role="search">
+        <input class="form-control search-bar w-75 px-3 " type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">
+          <i class="bi bi-search"></i> <!-- Bootstrap Icons -->
+        </button>
+      </form>
+
+      <!-- Icons -->
+      <div>
+        <!-- <a href="#" class="icon-btn me-3">
+          <i class="bi bi-cart-fill"></i>
+        </a>
+        <a href="#" class="icon-btn me-3">
+          <i class="bi bi-bell-fill"></i>
+        </a>
+        <a href="#" class="icon-btn">
+          <i class="bi bi-person-circle"></i>
+        </a> -->
+
+        <button class="btn btn-success text-white mt-3 mx-2 px-3 py-2 rounded-pill"
+        aria-label="See product details"
+        style="width: 90px; height: 40px;">
+            Login
+        </button>
+        
+        <button class="btn btn-success text-white mt-3 px-3 py-2 rounded-pill"
+        aria-label="See product details"
+        style="width: 90px; height: 40px;">
+            Sign up
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bottom Navbar -->
+  <nav class="navbar bottom-navbar">
+    <div class="container-fluid justify-content-center">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Fresh Meat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Vegetables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Fruits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dairy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <!-- ------------------------------------------------------------------------------------- -->
+
+
+
+  <div class="container py-5">
+  <div class="row g-4">
+    <!-- Product Image Section -->
+    <div class="col-md-6">
+      <div class="border p-3 rounded">
+        <img src="https://via.placeholder.com/300" alt="Fresh Broiler Chicken" class="img-fluid">
+      </div>
+      <div class="d-flex justify-content-start gap-2 mt-3">
+        <img src="https://via.placeholder.com/70" alt="Thumbnail 1" class="img-thumbnail" style="width: 70px; height: 70px;">
+        <img src="https://via.placeholder.com/70" alt="Thumbnail 2" class="img-thumbnail" style="width: 70px; height: 70px;">
+        <img src="https://via.placeholder.com/70" alt="Thumbnail 3" class="img-thumbnail" style="width: 70px; height: 70px;">
+      </div>
+    </div>
+
+    <!-- Product Details Section -->
+    <div class="col-md-6">
+      <h3 class="text-primary">Fresh Broiler Chicken</h3>
+      <p class="mb-1">
+        <span class="text-warning">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+        </span>
+        (10 Reviews)
+      </p>
+      <h4 class="text-danger">Price: ৳250.00/KG</h4>
+      <div class="d-flex align-items-center my-3">
+        <span class="me-3 fw-bold">Quantity:</span>
+        <button class="btn btn-outline-secondary btn-sm px-2" id="decrease">-</button>
+        <input type="text" class="form-control mx-2 text-center" id="quantity" value="1" style="width: 50px;" readonly>
+        <button class="btn btn-outline-secondary btn-sm px-2" id="increase">+</button>
+        <span class="ms-3 text-success">(50 Available)</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <button class="btn btn-success">Pre-Order Now</button>
+        <span class="text-primary fw-bold">Available in 5 days <i class="bi bi-star-fill text-success"></i></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Description and Reviews Section -->
+  <div class="row g-4 mt-5">
+    <div class="col-md-6">
+      <h5>Description:</h5>
+      <p class="border p-3 rounded">
+        Best quality Farm-grown organic chicken. Each chicken weighs 1.5 to 2 KG. One of the best-selling products.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h5>Reviews & Ratings:</h5>
+      <div class="border p-3 rounded">
+        <div class="d-flex align-items-center mb-3">
+          <span class="fw-bold me-2">5.0</span>
+          <span class="text-warning me-2">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </span>
+          <span>(10 Reviews)</span>
+        </div>
+        <textarea class="form-control mb-3" rows="2" placeholder="Comment"></textarea>
+        <button class="btn btn-primary" id="rateProduct">Rate this Product</button>
+
+        <!-- Star Rating Section -->
+        <div id="starRating" class="mt-3" style="display: none;">
+          <p class="mb-2">Rate this product:</p>
+          <div class="text-warning" id="stars">
+            <i class="bi bi-star" data-value="1"></i>
+            <i class="bi bi-star" data-value="2"></i>
+            <i class="bi bi-star" data-value="3"></i>
+            <i class="bi bi-star" data-value="4"></i>
+            <i class="bi bi-star" data-value="5"></i>
+          </div>
+          <p class="mt-2" id="ratingMessage" style="display: none;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Quantity Adjuster
+  document.getElementById("increase").addEventListener("click", function () {
+    const quantityInput = document.getElementById("quantity");
+    let value = parseInt(quantityInput.value);
+    if (value < 50) {
+      quantityInput.value = value + 1;
+    }
+  });
+
+  document.getElementById("decrease").addEventListener("click", function () {
+    const quantityInput = document.getElementById("quantity");
+    let value = parseInt(quantityInput.value);
+    if (value > 1) {
+      quantityInput.value = value - 1;
+    }
+  });
+
+  // Show Star Rating Section
+  document.getElementById("rateProduct").addEventListener("click", function () {
+    document.getElementById("starRating").style.display = "block";
+  });
+
+  // Star Rating Interaction
+  document.querySelectorAll("#stars i").forEach(function (star) {
+    star.addEventListener("click", function () {
+      const rating = this.getAttribute("data-value");
+      document.getElementById("ratingMessage").style.display = "block";
+      document.getElementById("ratingMessage").textContent = `You rated this product ${rating} star(s)!`;
+
+      // Highlight selected stars
+      document.querySelectorAll("#stars i").forEach(function (s) {
+        s.classList.remove("bi-star-fill");
+        s.classList.add("bi-star");
+      });
+      for (let i = 0; i < rating; i++) {
+        document.querySelectorAll("#stars i")[i].classList.remove("bi-star");
+        document.querySelectorAll("#stars i")[i].classList.add("bi-star-fill");
+      }
+    });
+  });
+</script>
+
+  
+</body>
+</html>
